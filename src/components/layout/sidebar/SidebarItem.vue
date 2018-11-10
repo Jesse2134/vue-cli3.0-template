@@ -10,7 +10,8 @@
 
         <template v-for="child in route.children" v-if="child.meta&&!child.meta.hidden">
           <!--递归-->
-          <sidebar-item v-if="child.children&&child.children.length>0" :routes="[child]" :key="child.path" :inner="true"></sidebar-item>
+          <sidebar-item v-if="child.children&&child.children.length>0" 
+            :routes="[child]" :key="child.path" :inner="true"></sidebar-item>
 
           <!--当前-->
           <el-menu-item v-else :index="route.path+ '/'+ child.path" :key="child.path">
@@ -39,6 +40,11 @@ export default {
       default: false
     },
     inner: Boolean
+  },
+  computed:{
+    isShow () {
+      return false;
+    }
   }
 };
 </script>

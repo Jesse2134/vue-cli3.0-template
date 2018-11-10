@@ -50,8 +50,10 @@
   cursor: pointer;
 }
 
+/* 左导航 */
+
 .aside {
-  background-color: #333743;
+  background-color: #2a394c;
   width: auto !important;
   height: 100%;
 }
@@ -69,14 +71,39 @@
 .el-menu--collapse {
   width: 50px;
 }
-
 .el-menu--collapse .el-icon-arrow-right,
-.el-menu--collapse .outer-title {
+.el-menu--collapse .outer-title{
   display: none;
 }
 
-.el-submenu__title i {
+.aside .el-menu-item.is-active,
+.aside .el-menu-item.is-active:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.aside .el-menu-item {
+  color: #999;
+}
+
+.aside .el-submenu__title:hover {
+  background-color: #001524;
+}
+
+.aside .el-submenu__title i {
   margin-right: 5px;
+}
+
+.aside .el-menu-item>div {
+  padding: 0 15px !important;
+}
+
+.aside .el-menu-item:focus,
+.aside .el-menu-item:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.el-menu--vertical .menu.el-menu-item{
+  background-color: #263243 !important;
 }
 
 .collapse-bar {
@@ -96,7 +123,7 @@
 
 .collapse-bar i {
   color: #fff;
-  width: 30px;
+  width: 15px;
   font-size: 16px;
   text-align: center;
   transition: all .2s;
