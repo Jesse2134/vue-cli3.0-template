@@ -1,5 +1,15 @@
 <template>
-    <div>
-        项目
-    </div>
+  <section>
+    {{$route.meta.title}}
+  </section>
 </template>
+
+<script>
+    export default {
+        name: "favorite"
+    }
+</script>
+
+<style scoped>
+
+</style>

@@ -31,6 +31,7 @@
         :isCollapse="isCollapse"
         v-if="asideShow"
         ref="AsideMenu"
+        :defaultAsideMenu="defaultAsideMenu"
         :asideRoutes="asideRoutes"
         collapse-transition>
       </Sidebar>
@@ -60,6 +61,7 @@
         user: {
           username: 'admin'
         },
+        defaultAsideMenu: '',
         asideShow: true,
         isCollapse: false,
         asideRoutes: ''
@@ -67,7 +69,7 @@
     },
     methods: {
       logout() {
-
+        this.$router.push({path: '/login'});
       },
       openUpdatePassDialog() {
 
@@ -75,6 +77,7 @@
     },
     created(){
       this.asideRoutes = Routers;
+      this.defaultAsideMenu = this.$route.path;
     }
   }
 </script>

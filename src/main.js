@@ -10,12 +10,16 @@ import 'font-awesome/css/font-awesome.min.css'
 import App from './App'
 import router from '@/router'
 import BaseVue from '@/views/common/base'
+import Utils from "@/utils";
+import Config from "@/config";
 
 Vue.use(ElementUI, {
     size: 'small',
     zIndex: 3000
 });
 Vue.config.productionTip = false;
+Vue.prototype.Utils = Utils;
+Vue.prototype.Config = Config;
 
 const ChildVue = Vue.extend(BaseVue);
 

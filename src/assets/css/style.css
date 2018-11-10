@@ -1,0 +1,212 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* 主页 */
+
+.el-container {
+  position: relative;
+  height: 100%;
+}
+
+.el-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 65px !important;
+  line-height: 65px;
+  text-align: center;
+  color: #fff;
+  background-color: #3d3d45;
+}
+
+.nav-menu>.el-menu-item.is-active,
+.nav-menu>.el-menu-item.is-active:hover,
+.nav-menu>.el-menu-item.is-active:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .1) !important;
+  border-bottom: none;
+}
+
+.nav-menu .el-menu-item:not(.is-disabled):focus {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.nav-menu .el-menu-item:not(.is-disabled):hover {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.user-info {
+  float: right;
+  margin-left: 40px;
+}
+
+.user-info .el-dropdown-link {
+  cursor: pointer;
+  color: #555;
+}
+
+/* 左导航 */
+
+.aside {
+  background-color: #2a394c;
+  width: auto !important;
+  height: 100%;
+}
+
+.aside .el-menu {
+  border: none;
+  background-color: transparent;
+}
+
+.sub-menu:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+
+.el-menu--collapse {
+  width: 50px;
+}
+.el-menu--collapse .el-icon-arrow-right,
+.el-menu--collapse .outer-title{
+  display: none;
+}
+
+.aside .el-menu-item.is-active,
+.aside .el-menu-item.is-active:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.aside .el-menu-item {
+  color: #999;
+}
+
+.aside .el-submenu__title:hover {
+  background-color: #001524;
+}
+.aside .el-menu-item>div {
+  padding: 0 15px !important;
+}
+
+.aside .el-menu-item:focus,
+.aside .el-menu-item:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.el-menu--vertical .menu.el-menu-item{
+  background-color: #263243 !important;
+}
+
+/* 面包屑 */
+
+.breadcrumb {
+  height: auto !important;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.footer {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #eee;
+}
+
+.footer small {
+  color: #999;
+  font-size: 12px;
+}
+
+/* 首页 */
+
+.app-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-list li {
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.app-list li a {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.app-list li a:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/app-list-icons.svg);
+  background-size: 100%;
+}
+
+.app-list li .icon-01:after {
+  background-position: 0 0;
+}
+
+.app-list li .icon-02:after {
+  background-position: 0 20%;
+}
+
+.app-list li .icon-03:after {
+  background-position: 0 40%;
+}
+
+.app-list li .icon-04:after {
+  background-position: 0 60%;
+}
+
+.app-list li .icon-05:after {
+  background-position: 0 80%;
+}
+
+.app-list li .icon-06:after {
+  background-position: 0 100%;
+}
+
+.app-list li .yellow {
+  background-image: linear-gradient(-35deg, #c85000 3%, #f8c332 94%);
+}
+
+.app-list li .orange {
+  background-image: linear-gradient(-35deg, #b31919 3%, #fb8332 94%);
+}
+
+.app-list li .red {
+  background-image: linear-gradient(-35deg, #9119b3 0%, #e64c4c 88%);
+}
+
+.app-list li .purple {
+  background-image: linear-gradient(-35deg, #4e2bcc 3%, #b620e0 100%);
+}
+
+.app-list li .blue {
+  background-image: linear-gradient(-35deg, #289dcc 3%, #815eff 94%);
+}
+
+.app-list li .cyan {
+  background-image: linear-gradient(-35deg, #36ac91 3%, #5ad0ff 94%);
+}
+
+.app-list li .green {
+  background-image: linear-gradient(-35deg, #57a900 3%, #69dfc4 94%);
+}
