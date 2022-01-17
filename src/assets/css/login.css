@@ -15,7 +15,7 @@
   background-size: cover;
 }
 
-.login .slogin {
+.login .slogan {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -24,13 +24,13 @@
   color: #fff;
 }
 
-.login .slogin h1 {
+.login .slogan h1 {
   font-size: 60px;
   font-weight: normal;
   margin: 30px 0;
 }
 
-.login .slogin h2 {
+.login .slogan h2 {
   color: rgba(255, 255, 255, .9);
   font-size: 30px;
   font-weight: normal;

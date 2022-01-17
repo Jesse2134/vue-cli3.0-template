@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import SidebarItem from "./SidebarItem";
+import SidebarItem from './SidebarItem'
 
 export default {
-  name: "Sidebar",
+  name: 'Sidebar',
   components: { SidebarItem },
   props: {
     isCollapse: {
@@ -43,39 +43,35 @@ export default {
   },
   watch: {
     asideRoutes: {
-      handler(val) {
+      handler (val) {
         this.$nextTick(() => {
-          this.$refs[
-            "AsideElMenu"
-          ].activeIndex = this.defaultActive = this.$route.path;
-        });
+          this.$refs.AsideElMenu.activeIndex = this.defaultActive = this.$route.path
+        })
       },
-      deep: true
+      deep: true,
+      immediate: true
     },
     defaultAsideMenu: {
-      handler(val) {
-        this.defaultActive = val;
+      handler (val) {
+        this.defaultActive = val
       }
     }
   },
   computed: {},
-  data() {
+  data () {
     return {
       collapsed: false,
-      defaultActive: ""
-    };
-  },
-  methods: {
-    change() {
-      this.collapsed = !this.collapsed;
-      this.$refs[
-        "AsideElMenu"
-      ].activeIndex = this.defaultActive = this.$route.path;
+      defaultActive: ''
     }
   },
-  mounted() {
-    this.collapsed = this.isCollapse;
+  methods: {
+    change () {
+      this.collapsed = !this.collapsed
+      this.$refs.AsideElMenu.activeIndex = this.defaultActive = this.$route.path
+    }
+  },
+  mounted () {
+    this.collapsed = this.isCollapse
   }
-};
+}
 </script>
-

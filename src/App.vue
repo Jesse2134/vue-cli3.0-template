@@ -7,11 +7,11 @@
 </template>
 
 <script>
-    import "@/assets/css/reset.css";
+import '@/assets/css/reset.css'
 
-    export default {
-        name: "App"
-    };
+export default {
+  name: 'App'
+}
 </script>
 
 <style>

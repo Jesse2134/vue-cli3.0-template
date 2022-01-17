@@ -5,23 +5,23 @@
 </template>
 
 <script>
-  // import Utils from '@/utils'
+// import Utils from '@/utils'
 
-  export default {
-    name: "example",
-    data() {
-      return {
-      }
-    },
-    filters: {
-      
-    },
-    methods: {
-      
+export default {
+  name: 'example',
+  data () {
+    return {
     }
+  },
+  filters: {
+
+  },
+  methods: {
+
   }
+}
 </script>
 
 <style>
- 
+
 </style>

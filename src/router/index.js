@@ -2,14 +2,21 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import store from '@/store'
 import routes from './routes'
-import Utils from '@/utils';
-Vue.use(VueRouter);
+import Utils from '@/utils'
+Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   // base: '/pcs/',
   routes: routes
-});
+})
+
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push (location, onResolve, onReject) {
+  if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
+  return originalPush.call(this, location).catch(err => err)
+}
+
 /* eslint-disable */
 // 路由拦截器
 router.beforeEach((to, from, next) => {

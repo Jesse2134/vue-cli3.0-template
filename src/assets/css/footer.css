@@ -21,13 +21,12 @@
   color: #777;
 }
 
-.footer a.logo-meishu {
+.footer a.logo-company {
   display: inline-block;
   width: 120px;
   height: 14px;
   font-size: 0;
   vertical-align: middle;
-  background: url(./../../assets/images/logo-meishutech.svg) no-repeat;
   background-size: contain;
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;

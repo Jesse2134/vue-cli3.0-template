@@ -23,7 +23,7 @@
 </template>
 <script>
 export default {
-  name: "DHeader",
+  name: 'DHeader',
   props: {
     title: {
       type: String,
@@ -33,6 +33,5 @@ export default {
       type: Function
     }
   }
-};
+}
 </script>
-
